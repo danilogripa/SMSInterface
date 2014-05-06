@@ -10,17 +10,17 @@ $messaggio =  stripslashes($_POST['messaggio']);
 
 //Controlli & Anti-Hack
 if (empty($upload)):
-	echo '<p>Attenzione - Non hai inserito un file CSV da elaborare.</p>';
+	echo '<p>Atenção - o Arquivo CSV não é valido</p>';
 	exit();
 else:
 endif;
 if ($upload == "undefined"):
-	echo '<p>Attenzione -  Non hai inserito un file CSV da elaborare.</p>';
+	echo '<p>Atenção - o Arquivo CSV não é valido</p>';
 	exit();
 else:
 endif;
 if (empty($messaggio)):
-	echo '<p>Attenzione -  Non hai inserito un messaggio.</p>';
+	echo '<p>Atenção - Insira a mensagem</p>';
 	exit();
 else:
 endif;
@@ -78,5 +78,5 @@ sleep (9);
 
 
 //Result 
-echo "<h2>Eseguito con successo. Grazie!</h2>";
+echo "<h2>Enviado com sucesso!</h2>";
 ?>
